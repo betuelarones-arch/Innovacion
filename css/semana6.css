@@ -333,3 +333,52 @@
   margin-bottom: 14px;
   font-size: 0.9rem;
 }
+
+/* SECCIÓN SCAMPER */
+.scamper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.scamper-card {
+  background: var(--card);
+  border: 1px solid var(--ring);
+  border-left: 4px solid var(--brand);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scamper-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.scamper-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--ring);
+}
+
+.scamper-card h4 {
+  color: var(--brand);
+  font-weight: 700;
+  margin: 15px 20px 8px 20px;
+  font-size: 1.1rem;
+}
+
+.scamper-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0 20px 20px 20px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .scamper-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,409 +1,351 @@
-<!-- 
-Hacer correr en el terminal mismo donde esta la carpeta o ctrnl + ñ para abrir el terminal
-python -m http.server 8000   
-
-entrar al y visualizar
-http://127.0.0.1:8000/principal.html
--->
-
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Espaldar Ultra | Fase 1: Empatizar</title>
-  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Espaldar Ultra | Innovación en Ergonomía</title>
+  <link rel="stylesheet" href="./css/index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Tipografía elegante y legible -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- NAV -->
   <header class="site-header">
     <nav class="nav">
-    <a class="brand" href="./index.html">Espaldar Ultra</a>
-    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
-    <ul class="nav-menu">
-        <li><a class="active" href="./index.html">Inicio</a></li>
-        <li><a href="./semana06.html">Semana 6</a></li>
-        <li><a href="./Sem10.html">Sem10</a></li>
-        <li><a href="./Sem20.html">Sem20</a></li>
-        <li><a href="./Sem40.html">Sem40</a></li>
-    </ul>
+      <a class="brand" href="./index.html">Espaldar Ultra</a>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-menu">
+         <li><a class="active" href="./index.html">Inicio</a></li>
+        <li><a href="./semana04.html">Semana 4</a></li>
+        <li><a href="./semana08.html">Semana 8</a></li>
+        <li><a href="#">Semana 9</a></li>
+        <li><a href="#">Sem10</a></li>
+        <li><a href="#">Sem20</a></li>
+        <li><a href="#">Sem40</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <!-- Usa tu imagen de portada existente -->
+  <!-- HERO PRINCIPAL -->
+  <section class="hero-main">
     <div class="hero-bg" style="--hero:url('./img/hero.jpg')"></div>
     <div class="hero-layer"></div>
     <div class="hero-content container">
-      <span class="badge">Design Thinking</span>
-      <h1>Espaldar <span>Ultra</span></h1>
+      <span class="badge">Innovación Ergonómica</span>
+      <h1>Espaldar <span class="highlight-text">Ultra</span></h1>
       <p class="lead">
-        Comfort inteligente para quienes pasan horas sentados estudiando o trabajando.
+        Una solución inteligente diseñada con metodología Design Thinking para mejorar 
+        la postura y el bienestar de estudiantes y profesionales.
       </p>
       <div class="cta">
-        <a class="btn primary" href="#empatizar">Ver Fase 1</a>
-        <a class="btn ghost" href="#idear">Explorar Ideación</a>
+        <a class="btn primary" href="#">Ver Proyecto Completo</a>
+        <a class="btn ghost" href="#problema">Conocer Más</a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">4-8</span>
+          <span class="stat-label">Horas sentados diarias</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">85%</span>
+          <span class="stat-label">Reportan dolor postural</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Fases Design Thinking</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FASE 1 -->
-  <main class="container" id="empatizar">
-    <section class="section-title">
-      <h2>Fase 1: <em>Empatizar</em></h2>
-      <p class="section-subtitle">
-        Comprender los problemas reales que enfrentan las personas que pasan varias horas sentadas.
-      </p>
+  <!-- INTRODUCCIÓN -->
+  <main class="container">
+    <section class="intro-section">
+      <div class="intro-content">
+        <h2>¿Por qué <em>Espaldar Ultra</em>?</h2>
+        <p class="intro-text">
+          En un mundo donde estudiantes y profesionales pasan entre 4 y 8 horas diarias sentados, 
+          los problemas posturales se han convertido en una preocupación creciente. El dolor de espalda, 
+          cuello y zona lumbar afecta directamente el rendimiento académico y laboral.
+        </p>
+        <p class="intro-text">
+          <strong>Espaldar Ultra</strong> nace como respuesta a esta necesidad, desarrollado mediante 
+          la metodología <em>Design Thinking</em> y fabricado con tecnología de impresión 3D para 
+          ofrecer una solución personalizable, accesible y efectiva.
+        </p>
+      </div>
     </section>
 
-    <section class="grid-2">
-      <!-- Columna izquierda: imágenes -->
-      <div class="column media-col">
-        <figure class="card media">
-          <img src="./img/tablas.png" alt="Horas sentados por entrevistado (rango diario)" loading="lazy">
-          <figcaption>Horas sentados por entrevistado (máx/mín diarios)</figcaption>
-        </figure>
-
-        <figure class="card media">
-          <img src="./img/postura.png" alt="Comparación de postura adecuada vs. inadecuada" loading="lazy">
-          <figcaption>Postura adecuada vs. inadecuada</figcaption>
-        </figure>
+    <!-- EL PROBLEMA -->
+    <section class="problem-section" id="problema">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2>El Problema</h2>
+        <p class="section-subtitle">
+          Identificamos los desafíos reales que enfrentan nuestros usuarios
+        </p>
       </div>
 
-      <!-- Columna derecha: contenido -->
-      <div class="column text-col">
-        <article class="card content">
-          <h3>Objetivo</h3>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="icon">⏰</div>
+          <h3>Largas Jornadas Sedentarias</h3>
           <p>
-            Comprender los problemas que enfrentan las personas que pasan varias horas sentadas en un
-            entorno de trabajo o estudio, para diseñar una solución útil, cómoda y alcanzable.
+            Estudiantes y trabajadores permanecen entre 4 y 8 horas diarias en posición sentada, 
+            aumentando el riesgo de problemas musculoesqueléticos.
           </p>
+        </div>
 
-          <h3>Hallazgos principales</h3>
-          <ul class="checks">
-            <li><strong>Horas sentados:</strong> entre <b>4</b> y <b>8 horas</b> diarias en escritorio o computadora.</li>
-            <li><strong>Entorno:</strong> contexto académico y laboral en la mayoría de casos.</li>
-            <li><strong>Percepción:</strong> no consideran adecuada su postura actual.</li>
-            <li><strong>Molestias comunes:</strong> dolor en zona lumbar, cuello y espalda tras largas jornadas.</li>
-            <li><strong>Acceso al producto:</strong> no usan una silla o soporte especial para mitigar molestias.</li>
-          </ul>
+        <div class="problem-card">
+          <div class="icon">🪑</div>
+          <h3>Falta de Ergonomía</h3>
+          <p>
+            La mayoría utiliza sillas sin soporte lumbar adecuado, lo que provoca malas posturas 
+            y tensión en espalda y cuello.
+          </p>
+        </div>
 
-          <div class="highlight">
-            <p><strong>Insight:</strong> las personas buscan alivio sin complicar su rutina: algo
-              <em>fácil de usar, portátil y ergonómico</em>.</p>
+        <div class="problem-card">
+          <div class="icon">💰</div>
+          <h3>Soluciones Inaccesibles</h3>
+          <p>
+            Las sillas ergonómicas profesionales tienen costos elevados que dificultan su 
+            adquisición para estudiantes y trabajadores.
+          </p>
+        </div>
+
+        <div class="problem-card">
+          <div class="icon">😣</div>
+          <h3>Impacto en la Salud</h3>
+          <p>
+            Dolores recurrentes en zona lumbar, cuello y espalda que afectan la concentración, 
+            el rendimiento y la calidad de vida.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUESTRA SOLUCIÓN -->
+    <section class="solution-section" id="solucion">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2>Nuestra Solución</h2>
+        <p class="section-subtitle">
+          Un espaldar inteligente desarrollado con metodología Design Thinking
+        </p>
+      </div>
+
+      <div class="solution-content">
+        <div class="solution-image">
+          <img src="./img/ejemplo.png" alt="Espaldar Ultra en uso" />
+        </div>
+
+        <div class="solution-text">
+          <h3>Espaldar Ultra: Ergonomía Personalizada</h3>
+          
+          <div class="feature">
+            <div class="feature-icon">🎯</div>
+            <div class="feature-content">
+              <h4>Diseño Adaptable</h4>
+              <p>Fabricado con impresión 3D para ajustarse a diferentes contextos y necesidades individuales.</p>
+            </div>
           </div>
-        </article>
+
+          <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <div class="feature-content">
+              <h4>Fácil de Usar</h4>
+              <p>Se coloca como una faja ajustable en la espalda, compatible con cualquier silla de estudio o trabajo.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">💡</div>
+            <div class="feature-content">
+              <h4>Tecnología Integrable</h4>
+              <p>Preparado para incorporar sensores que monitoreen la postura y envíen recordatorios personalizados.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">♻️</div>
+            <div class="feature-content">
+              <h4>Sostenible y Modular</h4>
+              <p>Piezas reemplazables e imprimibles, reduciendo desperdicios y permitiendo actualizaciones.</p>
+            </div>
+          </div>
+
+          <a class="btn primary" href="semana04.html">Explorar el Proceso Completo</a>
+        </div>
       </div>
     </section>
 
-
-    <!-- ===== FASE 2: DEFINIR ===== -->
-    <section class="section-title" id="definir">
-      <h2>Fase 2: <em>Definir</em></h2>
-      <p class="section-subtitle">
-        Enfocamos el problema y formulamos una solución clara a partir de lo aprendido.
-      </p>
-    </section>
-
-    <section class="grid-3">
-      <!-- Columna 1: Definir -->
-      <article class="card pad">
-        <h3>Problema central</h3>
-        <p>
-          ¿Cómo diseñar un sistema que ayude a estudiantes a <strong>monitorizar y mejorar su postura</strong> 
-          y hábitos frente a la computadora, integrando un <strong>dispositivo tangible</strong> con un 
-          <strong>software de acompañamiento</strong>?
+    <!-- METODOLOGÍA -->
+    <section class="methodology-section">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2>Metodología Design Thinking</h2>
+        <p class="section-subtitle">
+          Cinco fases que nos llevaron de la empatía a la solución
         </p>
+      </div>
 
-        <h4>Impactos actuales</h4>
-        <ul class="bullets">
-          <li>Dolores en espalda, cuello y zona lumbar.</li>
-          <li>Posibles lesiones si no se corrige la postura.</li>
-          <li>Fatiga que reduce el rendimiento.</li>
-        </ul>
+      <div class="phases-grid">
+        <div class="phase-card">
+          <div class="phase-number">1</div>
+          <h3>Empatizar</h3>
+          <p>Entrevistas con usuarios para comprender sus dolores y necesidades reales.</p>
+        </div>
 
-        <figure class="media">
-          <img src="./img/misio.png" alt="Dificultad de acceso a soluciones por costo" loading="lazy">
-          <figcaption>Dificultad de acceso a soluciones por costo.</figcaption>
-        </figure>
-      </article>
+        <div class="phase-card">
+          <div class="phase-number">2</div>
+          <h3>Definir</h3>
+          <p>Análisis de causas y consecuencias para formular el problema central.</p>
+        </div>
 
-      <!-- Columna 2: Causas -->
-      <article class="card pad">
-        <h3>Causas</h3>
-        <ul class="bullets">
-          <li>Permanecer sentado entre 4 a 8 horas diarias.</li>
-          <li>Uso de sillas sin ergonomía.</li>
-          <li>Baja disciplina para mantener postura adecuada.</li>
-          <li>No encontrar soluciones accesibles.</li>
-        </ul>
-      </article>
+        <div class="phase-card">
+          <div class="phase-number">3</div>
+          <h3>Idear</h3>
+          <p>Generación creativa de soluciones mediante lluvia de ideas y votación.</p>
+        </div>
 
-      <!-- Columna 3: Consecuencias -->
-      <article class="card pad">
-        <h3>Consecuencias</h3>
-        <ul class="bullets">
-          <li>Dolor en espalda, cuello y zona lumbar.</li>
-          <li>Lesiones por hábitos posturales incorrectos.</li>
-          <li>Fatiga que afecta el rendimiento.</li>
-        </ul>
+        <div class="phase-card">
+          <div class="phase-number">4</div>
+          <h3>Prototipar</h3>
+          <p>Modelado 3D e impresión del primer prototipo funcional.</p>
+        </div>
 
-        <figure class="media">
-          <img src="./img/malapostura.png" alt="Dolor lumbar por mala postura" loading="lazy">
-          <figcaption>Dolor lumbar asociado a malas posturas prolongadas.</figcaption>
-        </figure>
-      </article>
-    </section>
+        <div class="phase-card">
+          <div class="phase-number">5</div>
+          <h3>Evaluar</h3>
+          <p>Validación con usuarios reales y mejoras basadas en retroalimentación.</p>
+        </div>
+      </div>
 
-
-    <!-- ===== FASE 3: IDEAR ===== -->
-    <section class="section-title" id="idear">
-      <h2>Fase 3: <em>Idear</em></h2>
-      <p class="section-subtitle">
-        Generamos muchas alternativas y seleccionamos las más viables según impacto, facilidad y costo.
-      </p>
-    </section>
-
-    <!-- Hero lateral: imagen + lista -->
-    <section class="grid-2 idear-hero">
-      <figure class="card media">
-        <img src="./img/cerebro.png" alt="Lluvia de ideas: creatividad e innovación" loading="lazy">
-        <figcaption>Exploración creativa con lluvia de ideas guiada.</figcaption>
-      </figure>
-
-      <article class="card pad">
-        <h3>Hallazgos de la lluvia de ideas</h3>
-        <ul class="bullets">
-          <li>Mochilas con sensores para monitoreo de ergonomía.</li>
-          <li>Columna vertebral impresa en 3D (modelo didáctico/ergonómico).</li>
-          <li>Sillón impreso en 3D con cojines modulables.</li>
-          <li>Espaldar que se adapta a la forma de la espalda.</li>
-          <li>Silla impresa en 3D personalizada al usuario.</li>
-          <li>App que registre horas sentado y alerte pausas.</li>
-          <li>Sensor en espaldar que detecte mala postura y notifique.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- Lluvia de ideas: imágenes GRANDES + zoom -->
-    <section class="grid-2 idear-photos big">
-      <figure class="card media">
-        <img src="./img/Lluvia1.png" alt="Primera sesión de lluvia de ideas" loading="lazy">
-        <figcaption>Sesión 1: generación divergente de ideas.</figcaption>
-      </figure>
-      <figure class="card media">
-        <img src="./img/Lluvia2.png" alt="Segunda sesión de lluvia de ideas" loading="lazy">
-        <figcaption>Sesión 2: agrupación por temas y votación.</figcaption>
-      </figure>
-    </section>
-
-    <!-- Seleccionadas (texto) -->
-    <section class="card pad idear-selected">
-      <h3>Ideas finalistas</h3>
-      <ul class="bullets">
-        <li>Espaldar adaptable mediante impresión 3D.</li>
-        <li>Sensor que detecte malas posturas + chatbot con recordatorios de pausas/estiramientos.</li>
-        <li>Sistema tipo origami con pliegues móviles para soporte dinámico.</li>
-        <li>Micro-ajustes neumáticos por zonas (colchón inteligente para la espalda).</li>
-      </ul>
-    </section>
-
-    <!-- Tablero de post-its -->
-    <section class="ideas-board">
-      <div class="ideas-grid">
-        <article class="sticky lavender">Espaldar modular intercambiable (piezas 3D según actividad).</article>
-        <article class="sticky peach">Micro-ajustes neumáticos por zonas específicas.</article>
-        <article class="sticky lilac">Escaneo corporal 3D para curvaturas y puntos de presión.</article>
-        <article class="sticky mint">Espaldar “esquelético” similar a columna; se adapta con 3D.</article>
-        <article class="sticky aqua">App móvil con alertas de pausa y ejercicios rápidos.</article>
-        <article class="sticky sand">Sensor de postura con detección de inclinación y vibración.</article>
-        <article class="sticky berry">Fundas/cojines intercambiables con distintos niveles de soporte.</article>
-        <article class="sticky lime">Respaldo adaptable para gamers con soporte lumbar extra.</article>
+      <div class="cta-box">
+        <h3>¿Quieres ver el desarrollo completo?</h3>
+        <p>Explora cada fase del proyecto, desde las entrevistas iniciales hasta el prototipo final.</p>
+        <a class="btn primary" href="./semana04.html">Ver Proyecto Detallado</a>
       </div>
     </section>
 
-        <!-- ================= FASE 4: PROTOTIPAR ================= -->
-    <section class="section-title" id="prototipar">
-    <h2>Fase 4: <em>Prototipar</em></h2>
-    <p class="section-subtitle">
-        Vemos el prototipo (Tinkercad), la impresión física y el aspecto del producto final.
-    </p>
+    <!-- IMPACTO -->
+    <section class="impact-section">
+      <div class="section-header centered">
+        <span class="section-number">04</span>
+        <h2>Impacto Social</h2>
+        <p class="section-subtitle">
+          Más que un producto, una solución que transforma vidas
+        </p>
+      </div>
+
+      <div class="impact-content">
+        <p class="impact-text">
+          Creemos que <strong>Espaldar Ultra</strong> puede generar un impacto social positivo al 
+          fomentar hábitos posturales saludables entre estudiantes y trabajadores. Al reducir dolores 
+          musculares y prevenir lesiones, ayudamos a mejorar el bienestar físico y el rendimiento 
+          académico o laboral.
+        </p>
+        <p class="impact-text">
+          Como solución personalizable y accesible, promovemos mayor conciencia sobre la importancia 
+          del autocuidado y la ergonomía, contribuyendo a una cultura de salud preventiva en entornos 
+          educativos y profesionales.
+        </p>
+      </div>
     </section>
 
-    <!-- Hero del prototipo: Tinkercad + texto -->
-    <section class="grid-2 proto-hero">
-    <figure class="card media">
-        <!-- 1) Imagen del prototipo en Tinkercad -->
-        <!-- Reemplaza el nombre por el tuyo, ej.: tinkercad_preview.png -->
-        <img src="./img/tinker.png" alt="Prototipo en Tinkercad" loading="lazy">
-        <figcaption>Vista del prototipo en Tinkercad.</figcaption>
-    </figure>
-
-    <article class="card pad">
-        <h3>El prototipo</h3>
-        <p>
-        El usuario lo usa como una <strong>faja/espaldar</strong> que se coloca en la espalda y se ajusta a su comodidad.
-        Se modeló en 3D para validar <strong>ergonomía, ajuste y modularidad</strong>.
+    <!-- EQUIPO -->
+    <section class="team-section" id="equipo">
+      <div class="section-header centered">
+        <span class="section-number">05</span>
+        <h2>Nuestro Equipo</h2>
+        <p class="section-subtitle">
+          Conoce a las personas detrás de Espaldar Ultra
         </p>
-        <ul class="bullets">
-        <li>Ajuste cómodo y rápido según la contextura.</li>
-        <li>Piezas imprimibles en 3D y fáciles de reemplazar.</li>
-        <li>Compatibilidad con sensores para hábitos posturales.</li>
-        </ul>
+      </div>
 
-        <!-- Botón a Tinkercad (pon tu enlace REAL en href) -->
-        <p style="margin-top:10px">
-        <a class="btn primary" target="_blank" rel="noopener"
-            href="https://www.tinkercad.com/">
-            Ver en Tinkercad
+      <div class="team-grid">
+        <a href="https://www.linkedin.com/in/carlos-mendoza-2b722836a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" class="team-card">
+          <div class="team-avatar">
+            <span>M</span>
+          </div>
+          <h3>Mendoza Calderon Juan </h3>
+          <p class="team-role">Desarrollador Principal</p>
+          <span class="linkedin-icon">in</span>
         </a>
-        </p>
-        <!-- TIP: pega aquí tu URL completa de Tinkercad si la tienes pública -->
-    </article>
-    </section>
 
-    <!-- 3 fotos del prototipo impreso -->
-    <section class="proto-photos">
-    <figure class="card media">
-        <!-- 2) Impreso 1 -->
-        <img src="./img/3.jpeg" alt="Prototipo impreso - vista 1" loading="lazy">
-        <figcaption>Prototipo impreso: vista 1.</figcaption>
-    </figure>
+        <a href="https://www.linkedin.com/in/betuel-jesus-arones-silva-671ab3303/" target="_blank" rel="noopener" class="team-card">
+          <div class="team-avatar">
+            <span>AJ</span>
+          </div>
+          <h3>Aronés Silva Betuel J.</h3>
+          <p class="team-role">Diseño, documentación y desarrollo de web</p>
+          <span class="linkedin-icon">in</span>
+        </a>
 
-    <figure class="card media">
-        <!-- 3) Impreso 2 -->
-        <img src="./img/1.jpeg" alt="Prototipo impreso - vista 2" loading="lazy">
-        <figcaption>Prototipo impreso: vista 2.</figcaption>
-    </figure>
+        <a href="https://www.linkedin.com/in/milagros-ramos-a8676231a/" target="_blank" rel="noopener" class="team-card">
+          <div class="team-avatar">
+            <span>R</span>
+          </div>
+          <h3>Ramos Chamorro Milagros </h3>
+          <p class="team-role">Investigación UX</p>
+          <span class="linkedin-icon">in</span>
+        </a>
 
-    <figure class="card media">
-        <!-- 4) Impreso 3 -->
-        <img src="./img/2.jpeg" alt="Prototipo impreso - vista 3" loading="lazy">
-        <figcaption>Prototipo impreso: vista 3.</figcaption>
-    </figure>
-    </section>
+        <a href="https://www.linkedin.com/in/mayela-milagros-ticona-mamani-a47425366/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" class="team-card">
+          <div class="team-avatar">
+            <span>T</span>
+          </div>
+          <h3>Ticona Mamani Mayela </h3>
+          <p class="team-role">Prototipado 3D</p>
+          <span class="linkedin-icon">in</span>
+        </a>
 
-    <!-- 5) Foto del producto final / uso -->
-    <section class="proto-final card">
-    <figure class="media">
-        <img src="./img/ejemplo.png" alt="Aspecto del producto final / uso" loading="lazy">
-        <figcaption>Producto final: aspecto y modo de uso.</figcaption>
-    </figure>
-    </section>
+        <a href="https://www.linkedin.com/in/david-noe-carhuaz-vica%C3%B1a-9a001b219/" target="_blank" rel="noopener" class="team-card">
+          <div class="team-avatar">
+            <span>C</span>
+          </div>
+          <h3>Carhuaz Vicaña David </h3>
+          <p class="team-role">Impresión Laser - 3D</p>
+          <span class="linkedin-icon">in</span>
+        </a>
+      </div>
 
-
-        <!-- ================= FASE 5: EVALUAR ================= -->
-    <section class="section-title" id="evaluar">
-    <h2>Fase 5: <em>Evaluar</em></h2>
-    <p class="section-subtitle">
-        Validamos con usuarios: percepciones, fortalezas y debilidades, y elegimos la solución más viable.
-    </p>
-    </section>
-
-    <!-- Resumen + imagen lateral -->
-    <section class="grid-2 eval-hero">
-    <article class="card pad">
-        <h3>Percepciones de usuarios</h3>
-        <ul class="bullets">
-        <li>Interesa que sea <strong>personalizable</strong> y que se note la mejora al usarlo.</li>
-        <li>Valor por estar hecho con <strong>modelo 3D</strong> (ajustable y reemplazable).</li>
-        <li>Fácil de colocar, cómodo y no invasivo con la vestimenta.</li>
-        </ul>
-
-        <h3>Fortalezas y debilidades</h3>
-        <ul class="bullets">
-        <li><strong>Fortalezas:</strong> durable, adaptable, posibilidad de integrar sensores.</li>
-        <li><strong>Debilidades:</strong> requiere implementación tecnológica y podría notarse bajo la ropa.</li>
-        </ul>
-    </article>
-
-    <figure class="card media">
-        <!-- Cambia por tu imagen lateral de evaluación -->
-        <img src="./img/evaluar.png" alt="Ajustes ergonómicos evaluados con usuarios" loading="lazy">
-        <figcaption>Evaluación de ajustes y comodidad.</figcaption>
-    </figure>
-    </section>
-
-    <hr class="sep">
-
-    <!-- Evidencias (foto grande + análisis breve) -->
-    <section class="grid-2 eval-evidence">
-    <figure class="card media">
-        <!-- Cambia por tu foto de evidencia grande -->
-        <img src="./img/result.png" alt="Prueba de uso del espaldar" loading="lazy">
-        <figcaption>Prueba de uso y postura.</figcaption>
-    </figure>
-
-    <article class="card pad">
-        <h3>Análisis breve</h3>
-        <p>
-        Las entrevistas revelan que permanecer sentado 4–8 horas en entornos académicos y laborales, 
-        con sillas no ergonómicas y hábitos posturales deficientes, provoca dolor en espalda y cuello. 
-        Tras evaluar opciones (sillas 3D, apps de monitoreo, espaldar ajustable), la solución más viable 
-        es un <strong>espaldar inteligente</strong> con aplicación móvil por su equilibrio entre <em>costo, personalización y viabilidad</em>.
-        </p>
-    </article>
-    </section>
-
-
-
-        <!-- ================= REFLEXIÓN FINAL ================= -->
-    <section class="section-title" id="reflexion">
-    <h2>Reflexión final</h2>
-    </section>
-
-    <section class="final-reflection card">
-    <p>
-        Como equipo, creemos que nuestro espaldar inteligente podría generar un impacto social positivo al
-        fomentar hábitos posturales saludables entre estudiantes y trabajadores. Al reducir dolores musculares
-        y prevenir lesiones, ayudaría a mejorar el bienestar físico y el rendimiento académico o laboral.
-        Además, al ser una solución personalizable y accesible, puede promover mayor conciencia sobre la
-        importancia del autocuidado y la ergonomía, contribuyendo a una cultura de salud preventiva en entornos
-        educativos y profesionales.
-    </p>
-    </section>
-
-    <hr class="sep">
-
-    <!-- ================= PARTICIPANTES ================= -->
-    <section class="section-title" id="participantes">
-    <h2>Participantes</h2>
-    </section>
-
-    <section class="participants card">
-    <ul class="participants-list">
-        <li>Mendoza Calderon Juan 100%</li>
-        <li>Aronés Silva Betuel J. 100%</li>
-        <li>Ramos Chamorro Milagros 100%</li>
-        <li>Ticona Mamani Mayela 100%</li>
-        <li>Carhuaz Vicaña David 100%</li>
-    </ul>
+      <p class="team-note">Haz clic en cada miembro para ver su perfil de LinkedIn</p>
     </section>
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <small>© 2025 Espaldar Ultra</small>
-      <nav class="footer-nav">
-        <a href="./principal.html">Inicio</a>
-        <a href="./Semana06.html">Proyecto</a>
-        <a href="#idear">Idear</a>
-        <a href="#definir">Definir</a>
-      </nav>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Espaldar Ultra</h3>
+        <p>Innovación en ergonomía para el bienestar postural</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <a href="./index.html">Inicio</a>
+        <a href="#">Proyecto Completo</a>
+        <a href="#problema">El Problema</a>
+        <a href="#solucion">Solución</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Proyecto</h4>
+        <a href="#">Fase 1: Empatizar</a>
+        <a href="#">Fase 2: Definir</a>
+        <a href="#">Fase 3: Idear</a>
+        <a href="#">Fase 4: Prototipar</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom container">
+      <small>© 2025 Espaldar Ultra - Proyecto Design Thinking</small>
     </div>
   </footer>
-
-  <!-- Lightbox (zoom a pantalla completa) -->
-  <div id="lb" class="lightbox" aria-hidden="true">
-    <button class="close" aria-label="Cerrar">Cerrar ✕</button>
-    <img alt="Vista ampliada">
-  </div>
 
   <script>
     // Toggle móvil
@@ -413,30 +355,16 @@ http://127.0.0.1:8000/principal.html
       btn?.addEventListener("click", () => menu.classList.toggle("open"));
     })();
 
-    // Zoom en cualquier imagen dentro de .idear-photos
-    (function(){
-      const lb = document.getElementById('lb');
-      const lbImg = lb.querySelector('img');
-      const close = lb.querySelector('.close');
-
-      document.querySelectorAll('.idear-photos img, .proto-photos img, .proto-final img, .eval-hero img, .eval-evidence img, .eval-photos img').forEach(img => {
-        img.classList.add('zoomable');
-        img.addEventListener('click', () => {
-          lbImg.src = img.src;
-          lb.classList.add('open');
-          lb.setAttribute('aria-hidden', 'false');
-        });
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       });
-
-      function hide(){
-        lb.classList.remove('open');
-        lb.setAttribute('aria-hidden', 'true');
-        lbImg.src = '';
-      }
-      close.addEventListener('click', hide);
-      lb.addEventListener('click', e => { if (e.target === lb) hide(); });
-      document.addEventListener('keydown', e => { if (e.key === 'Escape') hide(); });
-    })();
+    });
   </script>
 </body>
 </html>
