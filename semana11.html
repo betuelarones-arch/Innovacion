@@ -1,497 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Espaldar Ultra | Fabricación Digital</title>
-    <meta
-      name="description"
-      content="Planificación y ejecución de fabricación digital (Impresión 3D y corte láser) para el proyecto Espaldar Ultra."
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="nav">
-        <a class="brand" href="./index.html">Espaldar Ultra</a>
-        <button
-          class="nav-toggle"
-          aria-label="Abrir menú"
-          aria-expanded="false"
-          aria-controls="nav-menu"
-        >
-          ☰
-        </button>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a class="active" href="./index.html">Inicio</a></li>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fabricación Digital | Espaldar Ultra</title>
+  <link rel="stylesheet" href="./css/semana11.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="./index.html">Espaldar Ultra</a>
+      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-menu">
           <li><a href="./semana04.html">Semana 4</a></li>
           <li><a href="./semana08.html">Semana 8</a></li>
           <li><a href="#">Semana 9</a></li>
           <li><a href="./semana11.html">Semana 11</a></li>
           <li><a href="#">Sem20</a></li>
           <li><a href="#">Sem40</a></li>
-        </ul>
-      </nav>
-    </header>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="hero">
-      <div class="hero-bg" style="--hero: url('./img/hero.jpg')"></div>
-      <div class="hero-layer"></div>
-      <div class="hero-content container">
-        <span class="badge">Fabricación Digital</span>
-        <h1>Del Modelo Digital a la <span>Realidad</span></h1>
-        <p class="lead">
-          Planificación y ejecución de fabricación mediante impresión 3D y corte
-          láser para el Espaldar Ultra.
+  <main class="container">
+    <!-- Introducción -->
+    <section class="fabricacion-intro card">
+      <div class="fab-header">
+        <span class="fab-badge">Fabricación Digital</span>
+        <h3>Proceso de Manufactura</h3>
+      </div>
+      <p>
+        En esta sección documentamos el proceso completo de fabricación del Espaldar Ultra, 
+        utilizando tecnologías de impresión 3D y corte láser para crear un producto ergonómico 
+        y personalizable.
+      </p>
+    </section>
+
+    <!-- VIDEO PRINCIPAL -->
+    <section class="fabricacion-activity">
+      <div class="activity-header">
+        <span class="activity-number">VIDEO</span>
+        <h3>Proceso de Fabricación</h3>
+      </div>
+      <div class="activity-content card">
+        <p class="activity-description">
+          Observa el proceso completo de fabricación, desde el diseño digital hasta el producto final.
         </p>
-        <div class="cta">
-          <a class="btn primary" href="#clasificacion">Ver Clasificación</a>
-          <a class="btn ghost" href="#roles">Roles del Equipo</a>
+        
+        <div class="video-container">
+          <video controls poster="./img/s7.jpg" width="400" height="500">
+            <source src="./media/s8.mp4" type="video/mp4">
+            <source src="./video/fabricacion-proceso.webm" type="video/webm">
+            Tu navegador no soporta el elemento de video.
+          </video>
+          <p class="video-caption">Video del proceso de fabricación del Espaldar Ultra</p>
         </div>
       </div>
     </section>
 
-    <main class="container">
-      <section class="section-title" id="fabricacion">
-        <h2>Fabricación <em>Digital</em></h2>
-        <p class="section-subtitle">
-          Análisis del modelo digital y planificación de fabricación mediante
-          impresión 3D y corte láser
-        </p>
-      </section>
-
-      <section class="fabricacion-intro card">
-        <div class="fab-header">
-          <span class="fab-badge">Planificación de Fabricación</span>
-          <h3>Del modelo digital a la fabricación real</h3>
-        </div>
-        <p>
-          En esta fase analizamos nuestro modelo digital para decidir qué piezas
-          se fabricarán mediante impresión 3D y cuáles mediante corte láser,
-          optimizando recursos y garantizando la mejor calidad en cada
-          componente del proyecto.
-        </p>
-      </section>
-
-      <section class="fabricacion-activity" id="clasificacion">
-        <div class="activity-header">
-          <span class="activity-number">Actividad 1</span>
-          <h3>Clasificación de Piezas del Proyecto</h3>
-        </div>
-
-        <div class="activity-content card">
-          <p class="activity-description">
-            Análisis detallado de cada componente del espaldar para determinar
-            el método de fabricación más adecuado según geometría, función y
-            material.
-          </p>
-
-          <div class="pieces-table-wrapper">
-            <table class="pieces-table">
-              <thead>
-                <tr>
-                  <th>Pieza</th>
-                  <th>Tipo de fabricación</th>
-                  <th>Justificación</th>
-                  <th>Material sugerido</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Estructura principal del espaldar</strong></td>
-                  <td><span class="badge-3d">Impresión 3D</span></td>
-                  <td>
-                    Requiere curvatura anatómica compleja para adaptarse a la
-                    espalda humana. Geometría 3D imposible de lograr con corte
-                    láser.
-                  </td>
-                  <td>PLA o PETG</td>
-                </tr>
-                <tr>
-                  <td><strong>Soportes lumbares laterales</strong></td>
-                  <td><span class="badge-3d">Impresión 3D</span></td>
-                  <td>
-                    Necesitan volumen y resistencia estructural. Formas
-                    tridimensionales con ángulos específicos para soporte
-                    ergonómico.
-                  </td>
-                  <td>PLA reforzado</td>
-                </tr>
-                <tr>
-                  <td><strong>Base de ajuste de correas</strong></td>
-                  <td><span class="badge-laser">Corte láser</span></td>
-                  <td>
-                    Pieza plana sin complejidad 3D. Ideal para corte láser por
-                    su geometría 2D y necesidad de precisión en los orificios.
-                  </td>
-                  <td>MDF 3mm o Acrílico 3mm</td>
-                </tr>
-                <tr>
-                  <td><strong>Carcasa para Arduino</strong></td>
-                  <td><span class="badge-3d">Impresión 3D</span></td>
-                  <td>
-                    Protección volumétrica con encajes precisos para componentes
-                    electrónicos. Requiere paredes y tapa con geometría 3D.
-                  </td>
-                  <td>PLA</td>
-                </tr>
-                <tr>
-                  <td><strong>Placas de refuerzo</strong></td>
-                  <td><span class="badge-laser">Corte láser</span></td>
-                  <td>
-                    Piezas planas que distribuyen peso. Más económico y rápido
-                    producir en corte láser manteniendo resistencia estructural.
-                  </td>
-                  <td>MDF 5mm</td>
-                </tr>
-                <tr>
-                  <td><strong>Conectores modulares</strong></td>
-                  <td><span class="badge-3d">Impresión 3D</span></td>
-                  <td>
-                    Requieren tolerancias precisas y geometría de encaje tipo
-                    clip. La impresión 3D permite ajustes milimétricos.
-                  </td>
-                  <td>PLA flexible (TPU opcional)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="selection-criteria">
-            <div class="criteria-card">
-              <div class="criteria-icon" aria-hidden="true">🖨️</div>
-              <h4>Impresión 3D</h4>
-              <ul>
-                <li>Geometrías complejas y curvas</li>
-                <li>Piezas que necesitan volumen</li>
-                <li>Encajes y tolerancias precisas</li>
-                <li>Componentes con resistencia específica</li>
-              </ul>
-            </div>
-
-            <div class="criteria-card">
-              <div class="criteria-icon" aria-hidden="true">⚡</div>
-              <h4>Corte Láser</h4>
-              <ul>
-                <li>Piezas planas o 2D</li>
-                <li>Producción rápida y económica</li>
-                <li>Materiales como MDF, acrílico o cartón</li>
-                <li>Estructuras de refuerzo simples</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="fabricacion-activity" id="ajustes">
-        <div class="activity-header">
-          <span class="activity-number">Actividad 2</span>
-          <h3>Ajustes Previos a la Fabricación</h3>
-        </div>
-
-        <div class="activity-content card">
-          <p class="activity-description">
-            Revisión técnica del modelo digital antes de exportar para
-            garantizar la correcta fabricación de todas las piezas.
-          </p>
-
-          <div class="adjustments-grid">
-            <div class="adjustment-item">
-              <div class="adjustment-icon" aria-hidden="true">📏</div>
-              <h4>Medidas y Tolerancias</h4>
-              <p>
-                Verificación de espacios entre piezas ensamblables. Tolerancia
-                de <strong>0.3mm - 0.5mm</strong> para encajes de impresión 3D.
-              </p>
-              <div class="check-item">✓ Holguras verificadas en conectores</div>
-              <div class="check-item">
-                ✓ Orificios ajustados para tornillos M3
-              </div>
-            </div>
-
-            <div class="adjustment-item">
-              <div class="adjustment-icon" aria-hidden="true">📐</div>
-              <h4>Espesor del Material</h4>
-              <p>
-                Ajuste del diseño según el material disponible:
-                <strong>MDF 3mm</strong> para bases y
-                <strong>acrílico 3mm</strong> para refuerzos.
-              </p>
-              <div class="check-item">✓ Ranuras ajustadas a 3.2mm</div>
-              <div class="check-item">✓ Ensambles verificados</div>
-            </div>
-
-            <div class="adjustment-item">
-              <div class="adjustment-icon" aria-hidden="true">🔄</div>
-              <h4>Orientación de Impresión</h4>
-              <p>
-                Optimización de la posición de cada pieza para minimizar
-                soportes y mejorar resistencia estructural según las capas de
-                impresión.
-              </p>
-              <div class="check-item">✓ Superficies planas hacia la base</div>
-              <div class="check-item">✓ Voladizos menores a 45°</div>
-            </div>
-
-            <div class="adjustment-item">
-              <div class="adjustment-icon" aria-hidden="true">🎯</div>
-              <h4>Layout de Corte Láser</h4>
-              <p>
-                Organización eficiente de piezas planas en el área de corte para
-                optimizar material y reducir desperdicio.
-              </p>
-              <div class="check-item">
-                ✓ Aprovechamiento del 85% del material
-              </div>
-              <div class="check-item">
-                ✓ Separación mínima de 3mm entre piezas
-              </div>
-            </div>
-          </div>
-
-          <div class="model-previews">
-            <figure class="model-preview">
-              <img
-                src="./img/modelo-ajustado.png"
-                alt="Modelo digital ajustado"
-                loading="lazy"
-              />
-              <figcaption>
-                Modelo digital con ajustes de tolerancia aplicados
-              </figcaption>
-            </figure>
-
-            <figure class="model-preview">
-              <img
-                src="./img/layout-corte.png"
-                alt="Layout organizado para corte láser"
-                loading="lazy"
-              />
-              <figcaption>
-                Layout optimizado de piezas para corte láser
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <section class="fabricacion-activity" id="roles">
-        <div class="activity-header">
-          <span class="activity-number">Actividad 3</span>
-          <h3>Asignación de Roles del Equipo</h3>
-        </div>
-
-        <div class="activity-content card">
-          <p class="activity-description">
-            Distribución estratégica de responsabilidades para optimizar el
-            proceso de fabricación y documentación del proyecto.
-          </p>
-
-          <div class="roles-grid">
-            <div class="role-card">
-              <div class="role-header">
-                <div class="role-icon" aria-hidden="true">🖨️</div>
-                <h4>Responsable de Impresión 3D</h4>
-              </div>
-              <div class="role-member">
-                <strong>Juan Mendoza Calderon</strong>
-              </div>
-              <div class="role-responsibilities">
-                <h5>Responsabilidades:</h5>
-                <ul>
-                  <li>Preparar y exportar archivos STL desde Tinkercad</li>
-                  <li>
-                    Configurar parámetros de impresión (infill, soportes,
-                    velocidad)
-                  </li>
-                  <li>Calcular tiempos de impresión estimados</li>
-                  <li>
-                    Supervisar el proceso de impresión y resolver errores
-                  </li>
-                  <li>
-                    Realizar post-procesamiento (lijado, limpieza de soportes)
-                  </li>
-                </ul>
-              </div>
-              <div class="role-tools">
-                <span class="tool-badge">Cura</span>
-                <span class="tool-badge">Tinkercad</span>
-                <span class="tool-badge">STL Export</span>
-              </div>
-            </div>
-
-            <div class="role-card">
-              <div class="role-header">
-                <div class="role-icon" aria-hidden="true">⚡</div>
-                <h4>Responsable de Corte Láser</h4>
-              </div>
-              <div class="role-member">
-                <strong>Betuel J. Aronés Silva</strong>
-              </div>
-              <div class="role-responsibilities">
-                <h5>Responsabilidades:</h5>
-                <ul>
-                  <li>
-                    Generar archivos vectoriales (SVG/DXF) desde el modelo 3D
-                  </li>
-                  <li>Organizar piezas en el layout optimizado</li>
-                  <li>
-                    Configurar software de corte láser (potencia, velocidad)
-                  </li>
-                  <li>Supervisar el proceso de corte</li>
-                  <li>
-                    Verificar calidad de los bordes y precisión dimensional
-                  </li>
-                </ul>
-              </div>
-              <div class="role-tools">
-                <span class="tool-badge">Inkscape</span>
-                <span class="tool-badge">LaserCut</span>
-                <span class="tool-badge">DXF Export</span>
-              </div>
-            </div>
-
-            <div class="role-card">
-              <div class="role-header">
-                <div class="role-icon" aria-hidden="true">📸</div>
-                <h4>Responsable de Documentación</h4>
-              </div>
-              <div class="role-member">
-                <strong>Milagros Ramos Chamorro</strong>
-              </div>
-              <div class="role-responsibilities">
-                <h5>Responsabilidades:</h5>
-                <ul>
-                  <li>
-                    Registrar el proceso completo con fotografías y videos
-                  </li>
-                  <li>Documentar errores y soluciones aplicadas</li>
-                  <li>Actualizar el portafolio web del grupo</li>
-                  <li>Crear tablas comparativas y reportes técnicos</li>
-                  <li>
-                    Mantener registro de tiempos y materiales utilizados
-                  </li>
-                </ul>
-              </div>
-              <div class="role-tools">
-                <span class="tool-badge">Fotografía</span>
-                <span class="tool-badge">HTML/CSS</span>
-                <span class="tool-badge">GitHub</span>
-              </div>
-            </div>
-
-            <div class="role-card">
-              <div class="role-header">
-                <div class="role-icon" aria-hidden="true">🔧</div>
-                <h4>Responsable de Ensamblaje</h4>
-              </div>
-              <div class="role-member">
-                <strong>Mayela Ticona & David Carhuaz</strong>
-              </div>
-              <div class="role-responsibilities">
-                <h5>Responsabilidades:</h5>
-                <ul>
-                  <li>Probar encajes entre piezas impresas y cortadas</li>
-                  <li>Identificar errores dimensionales o de tolerancia</li>
-                  <li>Proponer ajustes y mejoras al diseño</li>
-                  <li>Realizar el ensamblaje final del prototipo</li>
-                  <li>Integrar componentes electrónicos (Arduino, sensores)</li>
-                </ul>
-              </div>
-              <div class="role-tools">
-                <span class="tool-badge">Herramientas manuales</span>
-                <span class="tool-badge">Arduino IDE</span>
-                <span class="tool-badge">Multímetro</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="fabrication-timeline card">
-        <h3>Timeline de Fabricación</h3>
-        <div class="timeline-steps">
-          <div class="fab-step">
-            <div class="step-number">1</div>
-            <h4>Preparación Digital</h4>
-            <p>Exportar archivos STL y SVG</p>
-            <span class="step-time">Día 1</span>
-          </div>
-
-          <div class="step-arrow">→</div>
-
-          <div class="fab-step">
-            <div class="step-number">2</div>
-            <h4>Impresión 3D</h4>
-            <p>Fabricar piezas volumétricas</p>
-            <span class="step-time">Días 2-3</span>
-          </div>
-
-          <div class="step-arrow">→</div>
-
-          <div class="fab-step">
-            <div class="step-number">3</div>
-            <h4>Corte Láser</h4>
-            <p>Cortar piezas planas</p>
-            <span class="step-time">Día 4</span>
-          </div>
-
-          <div class="step-arrow">→</div>
-
-          <div class="fab-step">
-            <div class="step-number">4</div>
-            <h4>Ensamblaje</h4>
-            <p>Integrar todas las piezas</p>
-            <span class="step-time">Día 5</span>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <small>© 2025 Espaldar Ultra</small>
-        <nav class="footer-nav">
-          <a href="./index.html">Inicio</a>
-          <a href="./principal.html">Proyecto</a>
-          <a href="#clasificacion">Clasificación</a>
-          <a href="#roles">Roles</a>
-        </nav>
+    <!-- GALERÍA DE IMÁGENES -->
+    <section class="fabricacion-activity">
+      <div class="activity-header">
+        <span class="activity-number">GALERÍA</span>
+        <h3>Etapas de Fabricación</h3>
       </div>
-    </footer>
+      <div class="activity-content card">
+        <p class="activity-description">
+          Explora las diferentes etapas del proceso de fabricación a través de estas imágenes detalladas.
+        </p>
 
-    <script>
-      // Toggle móvil con accesibilidad mejorada
-      (function () {
-        const btn = document.querySelector('.nav-toggle');
-        const menu = document.querySelector('#nav-menu'); // Apunta al ID
+        <div class="image-gallery">
+          <!-- Imagen 1 -->
+          <figure class="gallery-item">
+            <img src="./img/s1.jpg" alt="Diseño digital en software 3D">
+            <figcaption>
+              <span class="caption-number">01</span>
+              <span class="caption-text">Diseño digital en software CAD</span>
+            </figcaption>
+          </figure>
 
-        if (btn && menu) {
-          btn.addEventListener('click', () => {
-            const isOpen = menu.classList.toggle('open');
+          <!-- Imagen 2 -->
+          <figure class="gallery-item">
+            <img src="./img/s2.jpg" alt="Modelado 3D del espaldar">
+            <figcaption>
+              <span class="caption-number">02</span>
+              <span class="caption-text">Modelado 3D de las piezas estructurales</span>
+            </figcaption>
+          </figure>
 
-            // Actualizar atributos ARIA
-            btn.setAttribute('aria-expanded', isOpen);
+          <!-- Imagen 3 -->
+          <figure class="gallery-item">
+            <img src="./img/s3.jpg" alt="Preparación en software de impresión">
+            <figcaption>
+              <span class="caption-number">03</span>
+              <span class="caption-text">Slicing y configuración de parámetros</span>
+            </figcaption>
+          </figure>
 
-            // Actualizar la etiqueta del botón para lectores de pantalla
-            if (isOpen) {
-              btn.setAttribute('aria-label', 'Cerrar menú');
-            } else {
-              btn.setAttribute('aria-label', 'Abrir menú');
-            }
-          });
-        }
-      })();
+          <!-- Imagen 4 -->
+          <figure class="gallery-item">
+            <img src="./img/s4.jpg" alt="Impresión 3D en proceso">
+            <figcaption>
+              <span class="caption-number">04</span>
+              <span class="caption-text">Impresión 3D de componentes principales</span>
+            </figcaption>
+          </figure>
 
-      // El script de Smooth Scroll se eliminó
-      // Ahora se maneja con CSS: html { scroll-behavior: smooth; }
-    </script>
-  </body>
+          <!-- Imagen 5 -->
+          <figure class="gallery-item">
+            <img src="./img/s5.jpg" alt="Corte láser de piezas">
+            <figcaption>
+              <span class="caption-number">05</span>
+              <span class="caption-text">Corte láser de piezas complementarias</span>
+            </figcaption>
+          </figure>
+
+          <!-- Imagen 6 -->
+          <figure class="gallery-item">
+            <img src="./img/s6.jpg" alt="Ensamblaje de componentes">
+            <figcaption>
+              <span class="caption-number">06</span>
+              <span class="caption-text">Ensamblaje y ajuste de piezas</span>
+            </figcaption>
+          </figure>
+
+          <!-- Imagen 7 -->
+          <figure class="gallery-item">
+            <img src="./img/s7.jpg" alt="Producto terminado">
+            <figcaption>
+              <span class="caption-number">07</span>
+              <span class="caption-text">Producto final ensamblado y funcional</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABLA DE PIEZAS -->
+    <section class="fabricacion-activity">
+      <div class="activity-header">
+        <span class="activity-number">ACTIVIDAD 1</span>
+        <h3>Piezas y Componentes</h3>
+      </div>
+      <div class="activity-content card">
+        <p class="activity-description">
+          Listado completo de las piezas fabricadas con sus especificaciones técnicas y método de manufactura.
+        </p>
+
+        <div class="pieces-table-wrapper">
+          <table class="pieces-table">
+            <thead>
+              <tr>
+                <th>Pieza</th>
+                <th>Material</th>
+                <th>Dimensiones</th>
+                <th>Método</th>
+                <th>Tiempo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Estructura principal</td>
+                <td>PLA</td>
+                <td>200 x 150 x 50 mm</td>
+                <td><span class="badge-3d">Impresión 3D</span></td>
+                <td>4h 30min</td>
+              </tr>
+              <tr>
+                <td>Soporte lumbar</td>
+                <td>PLA flexible</td>
+                <td>180 x 120 x 30 mm</td>
+                <td><span class="badge-3d">Impresión 3D</span></td>
+                <td>3h 15min</td>
+              </tr>
+              <tr>
+                <td>Base de ajuste</td>
+                <td>Acrílico 3mm</td>
+                <td>150 x 100 mm</td>
+                <td><span class="badge-laser">Corte Láser</span></td>
+                <td>15min</td>
+              </tr>
+              <tr>
+                <td>Sistema de correas</td>
+                <td>PLA</td>
+                <td>100 x 40 x 20 mm</td>
+                <td><span class="badge-3d">Impresión 3D</span></td>
+                <td>2h 00min</td>
+              </tr>
+              <tr>
+                <td>Conectores laterales</td>
+                <td>PLA</td>
+                <td>80 x 40 x 25 mm (x2)</td>
+                <td><span class="badge-3d">Impresión 3D</span></td>
+                <td>1h 30min</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE DE FABRICACIÓN -->
+    <section class="fabrication-timeline card">
+      <h3>Línea de Tiempo del Proceso</h3>
+      <div class="timeline-steps">
+        <div class="fab-step">
+          <span class="step-number">1</span>
+          <h4>Diseño CAD</h4>
+          <p>Modelado digital</p>
+          <span class="step-time">2 días</span>
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="fab-step">
+          <span class="step-number">2</span>
+          <h4>Preparación</h4>
+          <p>Slicing y ajustes</p>
+          <span class="step-time">4 horas</span>
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="fab-step">
+          <span class="step-number">3</span>
+          <h4>Fabricación</h4>
+          <p>Impresión 3D</p>
+          <span class="step-time">12 horas</span>
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="fab-step">
+          <span class="step-number">4</span>
+          <h4>Post-proceso</h4>
+          <p>Acabado y lijado</p>
+          <span class="step-time">3 horas</span>
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="fab-step">
+          <span class="step-number">5</span>
+          <h4>Ensamblaje</h4>
+          <p>Montaje final</p>
+          <span class="step-time">2 horas</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h3>Espaldar Ultra</h3>
+        <p>Innovación en ergonomía para el bienestar postural</p>
+      </div>
+      
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <a href="./index.html">Inicio</a>
+        <a href="#">Proyecto Completo</a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom container">
+      <small>© 2025 Espaldar Ultra - Proyecto Design Thinking</small>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle móvil
+    (function () {
+      const btn = document.querySelector(".nav-toggle");
+      const menu = document.querySelector(".nav-menu");
+      btn?.addEventListener("click", () => menu.classList.toggle("open"));
+    })();
+  </script>
+</body>
 </html>
