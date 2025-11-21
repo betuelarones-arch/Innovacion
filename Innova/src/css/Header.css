@@ -1,0 +1,30 @@
+/* Ejemplo en tu archivo CSS (e.g., style.css o Header.css) */
+
+.nav-menu a {
+    /* Estilos base */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #827e7e; /* Color al pasar el mouse */
+}
+
+/* 🎯 ESTILO PARA EL ENLACE ACTIVO */
+.nav-menu a.active {
+    /* Por ejemplo, marcarlo con un color de texto diferente y negrita */
+    color: #4194d8; /* Naranja/Ámbar, similar a tu icono */
+    font-weight: bold; 
+    /* También podrías poner un fondo, si lo deseas: */
+    /* background-color: rgba(255, 140, 0, 0.1); */
+    /* border-bottom: 2px solid #FF8C00; */
+}
+
+/* Opcional: si quieres que el 'brand' también tenga un estilo al estar en '/' */
+.brand.active {
+    /* Evita que el logo se marque si el enlace activo ya está marcado en el menú principal */
+    font-weight: normal; 
+    color: #000;
+}
