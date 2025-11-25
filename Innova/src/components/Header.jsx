@@ -30,9 +30,11 @@ export default function Header() {
                 <ul className={`nav-menu ${open ? 'open' : ''}`}>
                     {/* 4. Usar NavLink y aplicar la clase activa */}
                     <li><NavLink to="/" className={navLinkClass} onClick={closeMenu}>Inicio</NavLink></li>
-                    <li><NavLink to="/semana04" className={navLinkClass} onClick={closeMenu}>Semana 6</NavLink></li>
+                    <li><NavLink to="/semana06" className={navLinkClass} onClick={closeMenu}>Semana 6</NavLink></li>
                     <li><NavLink to="/semana08" className={navLinkClass} onClick={closeMenu}>Semana 8</NavLink></li>
                     <li><NavLink to="/semana10" className={navLinkClass} onClick={closeMenu}>Semana 10</NavLink></li>
+                    <li><NavLink to="/semana12" className={navLinkClass} onClick={closeMenu}>Semana 12</NavLink></li>
+                    <li><NavLink to="/semana14" className={navLinkClass} onClick={closeMenu}>Semana 14</NavLink></li>
                 </ul>
             </nav>
         </header>
