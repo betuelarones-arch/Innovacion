@@ -12,6 +12,7 @@ import corte from '../img/Corte.jpeg';
 import cajitaBase from '../img/cajita base.jpeg';
 import cajitaArmada from '../img/cajita armada.jpeg';
 import cajitaArmada2 from '../img/cajitaaramada2.jpeg';
+import heroImg from '../img/hero.jpg';
 
 import scamperSustituir from '../img/scamper-sustituir.jpg';
 import scamperCombinar from '../img/scamper-combinar.jpg';
@@ -24,17 +25,24 @@ import scamperReordenar from '../img/scamper-reordenar.jpg';
 const Semana06 = () => {
 	return (
 		<>
-			{/* HERO */}
 			<section id="laser-hero" className="laser-hero">
+				<div
+					className="laser-hero-bg"
+					style={{ '--hero': `url(${heroImg})` }}
+				></div>
+				<div className="laser-hero-layer"></div>
 				<div className="laser-hero-content container">
 					<span className="badge">Fabricación Digital</span>
 					<h1>Proceso de Corte Láser</h1>
 					<p className="lead">
-						Transformando el diseño digital en realidad mediante tecnología de corte láser de precisión.
+					Transformando el diseño digital en realidad mediante tecnología de corte láser de precisión.
 					</p>
+					<div className="cta">
+					<a className="btn primary" href="#intro">Ver Proceso</a>
+					<a className="btn ghost" href="#gallery">Explorar Galería</a>
+					</div>
 				</div>
 			</section>
-
 			<main className="container">
 
 				{/* INTRODUCCIÓN */}

@@ -7,6 +7,7 @@ import validado2 from '../img/failed2.jpg';
 import validado3 from '../img/final.jpg';
 import validado4 from '../img/validado4.jpg';
 import validado5 from '../img/validado5.jpg';
+import heroImg from '../img/hero.jpg';
 
 
 export default function Semana14() {
@@ -63,6 +64,10 @@ export default function Semana14() {
         <div className="weekly-report-page">
             {/* HERO - Entrega Final */}
             <section className="hero-main weekly-hero final-hero">
+                <div
+                    className="weekly-hero-bg"
+                    style={{ '--hero': `url(${heroImg})` }}
+                ></div>
                 <div className="hero-layer"></div>
                 <div className="hero-content container">
                     <span className="badge">Semana 14 | ENTREGA FINAL</span>
@@ -78,6 +83,7 @@ export default function Semana14() {
                     </a>
                 </div>
             </section>
+
 
             <div className="container">
                 {/* SECCIÓN DE VIDEO PROMOCIONAL */}

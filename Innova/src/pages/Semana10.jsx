@@ -7,6 +7,7 @@ import s3 from '../img/s3.jpg';
 import s4 from '../img/s4.jpg';
 import s5 from '../img/s5.jpg';
 import s6 from '../img/s6.jpg';
+import heroImg from '../img/hero.jpg';
 
 import s8 from '../media/s8.mp4';
 import fabricacionProcesoWebm from '../img/fabricacion-proceso.png'; 
@@ -15,30 +16,36 @@ const Semana10 = () => {
     return (
         
         <main className="container">
-            <section className="fabricacion-hero">
-                <div className="fabricacion-hero-content container">
-                    <span className="badge">Semana 10</span>
-                    <h1>Fabricación <span className="gradient-text">Digital</span></h1>
-                    <p className="lead">
-                        Documentación completa del proceso de manufactura del Espaldar Ultra utilizando
-                        tecnologías de impresión 3D y corte láser.
-                    </p>
-                    <div className="hero-stats">
-                        <div className="stat-item">
-                            <span className="stat-number">5</span>
-                            <span className="stat-label">Piezas Fabricadas</span>
-                        </div>
-                        <div className="stat-item">
-                            <span className="stat-number">23h</span>
-                            <span className="stat-label">Tiempo Total</span>
-                        </div>
-                        <div className="stat-item">
-                            <span className="stat-number">2</span>
-                            <span className="stat-label">Tecnologías</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           <section className="fabricacion-hero">
+                <div
+                    className="fabricacion-hero-bg"
+                    style={{ '--hero': `url(${heroImg})` }}
+                ></div>
+                <div className="fabricacion-hero-layer"></div>
+                <div className="fabricacion-hero-content container">
+                    <span className="badge">Semana 10</span>
+                    <h1>Fabricación <span className="gradient-text">Digital</span></h1>
+                    <p className="lead">
+                        Documentación completa del proceso de manufactura del Espaldar Ultra utilizando
+                        tecnologías de impresión 3D y corte láser.
+                    </p>
+                    <div className="hero-stats">
+                        <div className="stat-item">
+                            <span className="stat-number">5</span>
+                            <span className="stat-label">Piezas Fabricadas</span>
+                        </div>
+                        <div className="stat-item">
+                            <span className="stat-number">23h</span>
+                            <span className="stat-label">Tiempo Total</span>
+                        </div>
+                        <div className="stat-item">
+                            <span className="stat-number">2</span>
+                            <span className="stat-label">Tecnologías</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Introducción */}
             <section className="fabricacion-intro card">
                 <div className="fab-header">

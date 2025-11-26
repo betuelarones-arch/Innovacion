@@ -10,6 +10,7 @@ import semana125 from '../img/semana125.jpg';
 import semana126 from '../img/semana126.jpg';
 import semana127 from '../img/semana127.jpg';
 import semana128 from '../img/semana128.jpg';
+import heroImg from '../img/hero.jpg';
 
 export default function Semana12() {
     // Arrays con las imágenes importadas
@@ -50,6 +51,10 @@ export default function Semana12() {
         <div className="weekly-report-page">
             {/* HERO - Título de la Semana */}
             <section className="hero-main weekly-hero">
+                <div
+                    className="weekly-hero-bg"
+                    style={{ '--hero': `url(${heroImg})` }}
+                ></div>
                 <div className="hero-layer"></div>
                 <div className="hero-content container">
                     <span className="badge">Semana 12 | Ejecución</span>
@@ -61,7 +66,7 @@ export default function Semana12() {
                     </p>
                 </div>
             </section>
-
+            
             <div className="container">
                 {/* INTRODUCCIÓN Y JUSTIFICACIÓN DE DISEÑO */}
                 <section className="intro-section design-justification">

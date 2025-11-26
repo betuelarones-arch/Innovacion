@@ -828,3 +828,22 @@ main.container {
         grid-template-columns: 1fr;
     }
 }
+
+.laser-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: var(--hero) center/cover no-repeat;
+    z-index: 1;
+}
+
+.laser-hero-layer {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5); /* overlay */
+    z-index: 2;
+}
+
+.laser-hero-content {
+    position: relative;
+    z-index: 3;
+}

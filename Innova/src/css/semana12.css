@@ -514,3 +514,54 @@
         align-items: start;
     }
 }
+
+.weekly-hero {
+    position: relative;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.weekly-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: var(--hero) center/cover no-repeat;
+    z-index: 1;
+}
+
+.hero-layer {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5); /* overlay */
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.weekly-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+    color: var(--ink);
+}
+
+.highlight-text {
+    background: linear-gradient(120deg, var(--brand), var(--brand2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--muted);
+    max-width: 700px;
+    margin: 0 auto var(--spacing-lg);
+    line-height: 1.6;
+}
