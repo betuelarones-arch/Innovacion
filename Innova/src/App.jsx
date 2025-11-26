@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ScrollToTop from "./components/ScrollToTop";
 
 import Inicio from './pages/Inicio';
 import Semana06 from './pages/Semana06';
@@ -13,6 +14,7 @@ import Semana14 from './pages/Semana14';
 export default function App() {
   return (
     <Router>
+      <ScrollToTop /> 
       <Header />
       <main>
         <Routes>
