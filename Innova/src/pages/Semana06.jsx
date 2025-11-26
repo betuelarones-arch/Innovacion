@@ -1,5 +1,5 @@
 // Importa las imágenes y el video necesarios para el componente.
-import '../css/semana4.css';
+import '../css/semana06.css';
 import heroImg from '../img/hero.jpg';
 import tablasImg from '../img/tablas.png';
 import posturaImg from '../img/postura.png';
