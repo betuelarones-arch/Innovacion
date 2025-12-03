@@ -9,7 +9,7 @@ import propuestaA from '../img/propuestaA.png';
 import propuestaR from '../img/propuestaR.jpg';
 
 // Importar imágenes de tecnologías
-import tinkerImg from '../img/tinkercad-logo.png';
+import tinkerImg from '../img/tinkercad-Logo.png';
 import arduinoImg from '../img/arduino-logo.png';
 import fusion360Img from '../img/fusion360-logo.png';
 import reactImg from '../img/react-logo.png'; 
