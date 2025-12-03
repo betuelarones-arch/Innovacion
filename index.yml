@@ -1,0 +1,5 @@
+routes:
+  - id: productos-route
+    uri: lb://PRODUCTOS-SERVICE
+    predicates:
+      - Path=/api/productos/**
